@@ -1,8 +1,11 @@
-# MovieRama
+# MovieSite
+
+MovieSite is a web service where users can share their favorite movies. Every movie has a title and a small description. In addition it holds a reference to the user​ that submitted it. 
+Users can hit a like or a hate for every movie.
 
 ## Summary
 
-The implementation of the back end for Movierama was developed in nodejs. Client developed with Jquery and Bootstrap. Mongodb
+The implementation of the back end for MovieSite was developed in nodejs. Client developed with Jquery and Bootstrap. Mongodb
 is used to store the users and movies.
 The index page http://localhost:3012/ loads all the movies from db but user have to login or sign up to see the full
 functionality of the site. JsonWebToken mechanism is used to authenticate the logged in user. Client stores the jwt token in cookies.
