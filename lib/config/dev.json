@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "protocol": "http",
+  "port": "3012",
+  "mongodb": "mongodb://localhost:27017/movierama",
+  "jwtSecret":"thisIsasupersecretcodethamustgotocongigfile1244",
+  "jwtExpiration": 1440
+}

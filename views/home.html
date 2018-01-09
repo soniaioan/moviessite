@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang=”en”>
+
+<head>
+    <meta charset=”UTF-8”>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/javascripts/utils.js"></script>
+    <script src="/javascripts/home.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"><h1 class="text-primary">MovieRama</h1></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2"><h4>Welcome Back</h4></div>
+        <div class="col-sm-2"><h4 class="username"></h4></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-link" id="signout">SignOut</button></div>
+        <div class="col-sm-2"><a href="/add">Add a movie</a></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"><h5>Sort by</h5></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-link" id="likes">Likes</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-link" id="hates">Hates</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-link" id="date">Date</button></div>
+    </div>
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody id="movies"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

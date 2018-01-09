@@ -1,0 +1,46 @@
+{
+  "name": "MoviesSite",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.x.x"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev node ./bin/www",
+    "test:e2e": "cross-env NODE_ENV=test mocha \"test/e2e/**/*.js\"",
+    "test:unit": "cross-env NODE_ENV=test mocha \"test/unit/**/*.js\"",
+    "test": "cross-env NODE_ENV=test npm run test:unit && npm run test:e2e",
+    "test-cov": "cross-env NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha \"test/**/*.js\"",
+    "loadData": "cross-env NODE_ENV=dev node ./lib/loadDbData.js"
+  },
+  "dependencies": {
+    "bcrypt": "1.0.3",
+    "body-parser": "~1.17.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "joi": "^10.5.2",
+    "lodash": "4.0.0",
+    "log": "1.4.0",
+    "mongoose": "4.8.2",
+    "nconf": "0.6.9",
+    "serve-favicon": "~2.4.2",
+    "bluebird": "2.9.x",
+    "jsonwebtoken": "^7.1.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-sorted": "^0.1.0",
+    "cross-env": "5.0.1",
+    "mocha": "^3.2.0",
+    "mochawesome": "^2.0.3",
+    "should": "8.2.2",
+    "supertest": "3.0.x",
+    "supertest-as-promised": "^4.0.2",
+    "eslint": "^4.14.0",
+    "istanbul": "0.4.5",
+    "sinon": "^4.1.3"
+  }
+}

@@ -1,0 +1,8 @@
+.idea
+node_modules
+workspace.xml
+coverage.html
+reporter.xml
+node-jscoverage
+mochawesome-reports
+coverage
